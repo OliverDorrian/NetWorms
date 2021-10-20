@@ -1,42 +1,53 @@
-body{
+body {
     margin: 0 0 0 10%;
     padding: 0;
     background: #f1f1f1;
-
 }
+
 .headerTitle{
     text-align: center;
 }
 
+#title{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    align-content: center;
+    padding-right: 70px;
+}
+
 .header{
     height: 8%;
-    width: 90%;
+    width: 100%;
     top: 0;
-    left: 10%;
+    left: 0;
     background-color: #7395AE;
     position: fixed;
-    font-family: 'Fira Sans', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .headerButtons{
-    position: absolute;
+    position: relative;
 
-    width: 100%;
+    float: left;
     height: 100%;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    text-align: justify;
 }
-.headerButtons a:hover{
+
+.headerButtons .hover-grey{
+    margin-right: 20px;
+}
+
+.headerButtons .hover-grey:hover{
     background: #5D5C61;
-
 }
-.headerLogin a:hover{
+
+.headerLogin .hover-grey:hover{
     background: #5D5C61;
 }
 
@@ -47,8 +58,6 @@ body{
     position: relative;
     width: 15%;
     height: 100%;
-
-
 
     display: flex;
     flex-direction: column;
@@ -62,7 +71,7 @@ body{
     color: white;
     padding: 12px;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     text-align: left;
     align-content: center;
 }
@@ -79,7 +88,7 @@ footer{
     justify-content: space-evenly;
     flex-direction: row;
 
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 
     position: absolute;
@@ -91,13 +100,15 @@ footer{
 
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: 10%;
+    left: 2%;
 
     background: #557A95;
+    border-radius: 4px;
+    box-shadow: black 10px 20px;
 }
 #sidebar * {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
 }
 .sideBarText {
@@ -173,10 +184,11 @@ footer{
 }
 
 #article{
+    font-family: 'Montserrat', sans-serif;
     background: white;
-    margin: 6% 2% 6% 2% ;
+    margin: 5% 4% 6% 4% ;
 
-    padding: 5%;
+    padding: 2% 5%;
 
 
     border-radius: 4px;
@@ -194,5 +206,4 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background: #557A95;
-
 }
