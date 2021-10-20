@@ -32,6 +32,13 @@ body{
     align-content: space-evenly;
     text-align: justify;
 }
+.headerButtons a:hover{
+    background: #5D5C61;
+
+}
+.headerLogin a:hover{
+    background: #5D5C61;
+}
 
 .headerLogin{
     background-color: #7395AE;
@@ -176,3 +183,16 @@ footer{
     box-shadow: #557A95 10px 20px;
 }
 
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #5D5C61;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #557A95;
+
+}
