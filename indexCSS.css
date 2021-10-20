@@ -18,16 +18,20 @@ body {
 }
 
 .header{
+    background-color: rgba(115, 149, 174, 0.63);
     height: 8%;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #7395AE;
     position: fixed;
     font-family: 'Montserrat', sans-serif;
 }
-
+.active{
+    background: #5D5C61;
+    border-radius: 30px;
+}
 .headerButtons{
+
     position: relative;
 
     float: left;
@@ -44,15 +48,17 @@ body {
 }
 
 .headerButtons .hover-grey:hover{
+    border-radius: 30px;
     background: #5D5C61;
 }
 
 .headerLogin .hover-grey:hover{
+    border-radius: 30px;
+
     background: #5D5C61;
 }
 
 .headerLogin{
-    background-color: #7395AE;
     float: right;
 
     position: relative;
@@ -79,9 +85,9 @@ body {
 footer{
     background-color: #7395AE;
 
-    width: 90%;
+    left: 0;
+    width: 100%;
     height: 10%;
-    left: 10%;
 
     display: flex;
     align-items: center;
@@ -91,12 +97,13 @@ footer{
     font-family: 'Montserrat', sans-serif;
     color: white;
 
+    z-index: 4;
     position: absolute;
 }
 
 #sidebar{
-    height: 100%;
-    width: 10%;
+
+
 
     position: fixed;
     z-index: 1;
@@ -105,12 +112,14 @@ footer{
 
     background: #557A95;
     border-radius: 4px;
-    box-shadow: black 10px 20px;
+    box-shadow: black 15px 20px;
 }
+
 #sidebar * {
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
 .sideBarText {
     padding: 5px 5px 0;
     font-size: 25px;
