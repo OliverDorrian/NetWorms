@@ -18,7 +18,7 @@ body {
 }
 
 .header{
-    background-color: rgba(115, 149, 174, 0.63);
+    background-color: rgba(115, 149, 174, 0.91);
     height: 8%;
     width: 100%;
     top: 0;
@@ -26,10 +26,11 @@ body {
     position: fixed;
     font-family: 'Montserrat', sans-serif;
 }
+
 .active{
     background: #5D5C61;
-    border-radius: 30px;
 }
+
 .headerButtons{
 
     position: relative;
@@ -39,26 +40,24 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
 }
 
 .headerButtons .hover-grey{
-    margin-right: 20px;
+
 }
 
 .headerButtons .hover-grey:hover{
-    border-radius: 30px;
+
     background: #5D5C61;
 }
 
 .headerLogin .hover-grey:hover{
-    border-radius: 30px;
 
     background: #5D5C61;
 }
 
 .headerLogin{
+
     float: right;
 
     position: relative;
@@ -75,7 +74,7 @@ body {
 
 .header a{
     color: white;
-    padding: 12px;
+    padding: 15px;
     text-decoration: none;
     font-size: 30px;
     text-align: left;
@@ -102,13 +101,11 @@ footer{
 }
 
 #sidebar{
-
-
-
     position: fixed;
     z-index: 1;
     top: 10%;
-    left: 2%;
+    left: 1%;
+    height: 80%;
 
     background: #557A95;
     border-radius: 4px;
@@ -206,13 +203,19 @@ footer{
 
 
 body::-webkit-scrollbar {
-    width: 20px;
+    border: #5D5C61 solid 5px;
+    border-radius: 10px;
+    background-color: #5D5C61;
 }
 
 body::-webkit-scrollbar-track {
+    border: #5D5C61 solid 5px;
+    border-radius: 10px;
     background-color: #5D5C61;
 }
 
 body::-webkit-scrollbar-thumb {
+    border: #557A95 solid 5px;
+    border-radius: 10px;
     background: #557A95;
 }
