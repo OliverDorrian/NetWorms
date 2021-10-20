@@ -32,6 +32,13 @@ body{
     align-content: space-evenly;
     text-align: justify;
 }
+.headerButtons a:hover{
+    background: #5D5C61;
+
+}
+.headerLogin a:hover{
+    background: #5D5C61;
+}
 
 .headerLogin{
     background-color: #7395AE;
