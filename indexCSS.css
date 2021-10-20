@@ -1,19 +1,22 @@
 body{
-    margin: 0 0 0 20%;
+    margin: 0 0 0 10%;
     padding: 0;
-    background: #5D5C61;
+    background: #f1f1f1;
+
 }
 .headerTitle{
     text-align: center;
 }
 
 .header{
-    height: 15%;
-    width: 80%;
+    height: 8%;
+    width: 90%;
     top: 0;
-    left: 20%;
+    left: 10%;
     background-color: #7395AE;
     position: fixed;
+    font-family: 'Fira Sans', sans-serif;
+
 }
 
 .headerButtons{
@@ -26,8 +29,8 @@ body{
     flex-direction: row;
 
     flex-wrap: wrap;
-    align-content: center;
-    text-align: center;
+    align-content: space-evenly;
+    text-align: justify;
 }
 
 .headerLogin{
@@ -52,25 +55,32 @@ body{
     color: white;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 40px;
     text-align: left;
     align-content: center;
-
 }
 
 footer{
-    text-align: center;
-    background-color: #04349a;
-    padding: 3px;
-    width: 80%;
+    background-color: #7395AE;
+
+    width: 90%;
     height: 10%;
-    left: 20%;
+    left: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+
     position: absolute;
 }
 
 #sidebar{
     height: 100%;
-    width: 20%;
+    width: 10%;
 
     position: fixed;
     z-index: 1;
@@ -86,6 +96,7 @@ footer{
 .sideBarText {
     padding: 5px 5px 0;
     font-size: 25px;
+
     background: none;
     cursor: pointer;
     border: none;
@@ -101,7 +112,7 @@ footer{
 }
 
 .sideBarTitle {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
 }
 
@@ -132,7 +143,8 @@ footer{
 .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+
 
     animation: flowDown 400ms ease-in forwards;
 }
@@ -155,10 +167,12 @@ footer{
 
 #article{
     background: white;
-    margin: 12% 5% 8% 5% ;
+    margin: 6% 2% 6% 2% ;
 
-    border: white solid 5px;
+    padding: 5%;
+
+
     border-radius: 4px;
-    box-shadow: 5px 10px;
+    box-shadow: #557A95 10px 20px;
 }
 
