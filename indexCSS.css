@@ -1,6 +1,4 @@
 body {
-    margin: 0 0 0 14%;
-    padding: 0;
     background: #f1f1f1;
 }
 
@@ -32,45 +30,51 @@ body {
     background: #5D5C61;
 }
 
+.login{
+    float: right;
+}
+
 .headerButtons{
-
+    width: 100%;
     position: relative;
-
-    float: left;
+    white-space: nowrap;
     height: 100%;
     font-size: initial;
     display: flex;
     flex-direction: row;
 }
 
-.headerButtons .hover-grey{
-
-}
-
 .headerButtons .hover-grey:hover{
-
-    background: #5D5C61;
-}
-
-.headerLogin .hover-grey:hover{
-
     background: #5D5C61;
 }
 
 .headerLogin{
-
-    float: right;
-
     position: relative;
-    width: 15%;
+
+    white-space: nowrap;
+
+    right: 0;
     height: 100%;
+    width: 20%;
+    font-size: initial;
 
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: center;
-    align-items: normal;
+    justify-content: right;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.headerLogin .hover-grey:hover{
+    background: #5D5C61;
+}
+.headerLogin a {
+    height: 100%;
+
+}
+.headerLogin a:hover{
+    background: #5D5C61;
+
 }
 
 .header a{
@@ -78,8 +82,6 @@ body {
     padding: 2%;
     text-decoration: none;
     font-size: 130%;
-    text-align: left;
-    align-content: center;
 }
 
 footer{
@@ -104,7 +106,7 @@ footer{
 #sidebar{
     position: fixed;
     z-index: 1;
-    top: 12%;
+    top: 13%;
     left: 1%;
     height: 80%;
 
@@ -120,7 +122,7 @@ footer{
 
 .sideBarText {
     padding: 5px 5px 0;
-    font-size: 25px;
+    font-size: 130%;
 
     background: none;
     cursor: pointer;
@@ -181,7 +183,7 @@ footer{
 @keyframes flowDown {
     0% {
         opacity: 0;
-        transform: translateY(-30px)
+        transform: translateY(-10px)
     }
 
     100% {
@@ -193,12 +195,30 @@ footer{
 #article{
     font-family: 'Montserrat', sans-serif;
     background: white;
-    margin: 9% 5% 6% 5% ;
+
+    margin: 6% 5% 2% 20% ;
     padding: 3% 5%;
     border-radius: 4px;
     box-shadow: #557A95 10px 20px;
 }
 
+#article h1{
+    font-size: larger;
+}
+
+#article h2{
+    font-size: large;
+}
+#article em{
+    font-size: large;
+}
+#article p {
+    font-size: medium;
+}
+
+#article img{
+    min-width: 300px;
+}
 
 body::-webkit-scrollbar {
     border: #5D5C61 solid 5px;
