@@ -1,5 +1,5 @@
 body {
-    margin: 0 0 0 10%;
+    margin: 0 0 0 14%;
     padding: 0;
     background: #f1f1f1;
 }
@@ -14,12 +14,13 @@ body {
     text-decoration: none;
     text-align: left;
     align-content: center;
-    padding-right: 70px;
+    margin-right: 5%;
+    font-size: 110%;
 }
 
 .header{
     background-color: rgba(115, 149, 174, 0.91);
-    height: 8%;
+    height: 11%;
     width: 100%;
     top: 0;
     left: 0;
@@ -37,7 +38,7 @@ body {
 
     float: left;
     height: 100%;
-
+    font-size: initial;
     display: flex;
     flex-direction: row;
 }
@@ -74,9 +75,9 @@ body {
 
 .header a{
     color: white;
-    padding: 15px;
+    padding: 2%;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 130%;
     text-align: left;
     align-content: center;
 }
@@ -103,7 +104,7 @@ footer{
 #sidebar{
     position: fixed;
     z-index: 1;
-    top: 10%;
+    top: 12%;
     left: 1%;
     height: 80%;
 
@@ -137,7 +138,7 @@ footer{
 
 .sideBarTitle {
     text-align: left;
-    font-size: 40px;
+    font-size: 100%;
 }
 
 .arrowDown{
@@ -192,11 +193,8 @@ footer{
 #article{
     font-family: 'Montserrat', sans-serif;
     background: white;
-    margin: 5% 4% 6% 4% ;
-
-    padding: 2% 5%;
-
-
+    margin: 9% 5% 6% 5% ;
+    padding: 3% 5%;
     border-radius: 4px;
     box-shadow: #557A95 10px 20px;
 }
@@ -204,18 +202,18 @@ footer{
 
 body::-webkit-scrollbar {
     border: #5D5C61 solid 5px;
-    border-radius: 10px;
+    border-radius: 1vm;
     background-color: #5D5C61;
 }
 
 body::-webkit-scrollbar-track {
     border: #5D5C61 solid 5px;
-    border-radius: 10px;
+    border-radius: 1vm;
     background-color: #5D5C61;
 }
 
 body::-webkit-scrollbar-thumb {
     border: #557A95 solid 5px;
-    border-radius: 10px;
+    border-radius: 1vm;
     background: #557A95;
 }
