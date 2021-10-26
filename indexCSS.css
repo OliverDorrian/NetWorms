@@ -215,8 +215,9 @@ footer{
     font-size: medium;
 }
 
-#article img{
-    min-width: 300px;
+#f\.Scot{
+    width: 30vm;
+    height: auto;
 }
 
 body::-webkit-scrollbar {
