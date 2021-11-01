@@ -1,6 +1,8 @@
-let linkSideBar = document.querySelector(".sideBarLink");
+let sideBar  = document.querySelector(".dropdown");
 
-linkSideBar.addEventListener("click", function () {
-    console.log("Click Works");
+sideBar.addEventListener("click", function() {
+
+    console.log("Yes");
+    sideBar.lastChild.setAttribute("display", "flex");
+    sideBar.lastChild.setAttribute("flex-direction", "column")
 })
-

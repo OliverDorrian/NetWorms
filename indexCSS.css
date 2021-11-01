@@ -165,30 +165,16 @@ footer{
 .dropdown-content a{
     text-decoration: none;
 }
-
+/*
 .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
     text-align: left;
-
-
     animation: flowDown 400ms ease-in forwards;
 }
-
+*/
 .dropdown-content a:hover{
     background: black;
-}
-
-@keyframes flowDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-10px)
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0)
-    }
 }
 
 #article{
