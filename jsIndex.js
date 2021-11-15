@@ -1,8 +1,19 @@
-let sideBar  = document.querySelector(".dropdown");
+let sideBar  = document.querySelectorAll(".dropdown");
+let sideBarBackground = document.getElementById("sidebar")
 
-sideBar.addEventListener("click", function() {
+for (let i of  sideBar){
+    i.addEventListener("click", function () {
+        let yes = i.querySelector(".dropdown-content");
 
-    console.log("Yes");
-    sideBar.lastChild.setAttribute("display", "flex");
-    sideBar.lastChild.setAttribute("flex-direction", "column")
-})
+        if (yes.style.display === "flex"){
+            yes.style.display = "none";
+            let size = sideBarBackground.style.height
+            sideBarBackground.style.height = "s";
+            return;
+        }
+
+        yes.style.display = "flex";
+        yes.style.flexDirection = "column";
+        sideBarBackground.style.height = "90%";
+    })
+}
