@@ -1,5 +1,5 @@
 body {
-    background: #f1f1f1;
+    background: #c7c1c1;
 }
 
 .headerTitle{
@@ -69,11 +69,10 @@ body {
 }
 .headerLogin a {
     height: 100%;
-
 }
+
 .headerLogin a:hover{
     background: #5D5C61;
-
 }
 
 .header a{
@@ -82,24 +81,20 @@ body {
     text-decoration: none;
     font-size: 130%;
 }
-
-footer{
-    background-color: #7395AE;
-
-    left: 0;
-    width: 100%;
-    height: 10%;
+/*DO not do this, stupid baby */
+.headerButtons > .course:hover{
 
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
 
-    font-family: 'Montserrat', sans-serif;
-    color: white;
+    height: 10%;
 
-    z-index: 4;
-    position: absolute;
+    background: grey;
+}
+.course-dropdown {
+    position: relative;
+    display: none;
+    font-size: medium;
 }
 
 #sidebar{
@@ -181,7 +176,7 @@ footer{
     font-family: 'Montserrat', sans-serif;
     background: white;
 
-    margin: 6% 5% 2% 20% ;
+    margin: 6% 5% 4% 20% ;
     padding: 3% 5%;
     border-radius: 4px;
     box-shadow: #557A95 10px 20px;
@@ -222,4 +217,23 @@ body::-webkit-scrollbar-thumb {
     border: #557A95 solid 5px;
     border-radius: 1vm;
     background: #557A95;
+}
+
+footer{
+    background-color: #7395AE;
+
+    left: 0;
+    width: 100%;
+    height: 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    z-index: 4;
+    position: absolute;
 }

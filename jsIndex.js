@@ -7,8 +7,7 @@ for (let i of  sideBar){
 
         if (yes.style.display === "flex"){
             yes.style.display = "none";
-            let size = sideBarBackground.style.height
-            sideBarBackground.style.height = "s";
+            sideBarBackground.style.height = "80%" ;
             return;
         }
 
@@ -17,3 +16,5 @@ for (let i of  sideBar){
         sideBarBackground.style.height = "90%";
     })
 }
+
+
