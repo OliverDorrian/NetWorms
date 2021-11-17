@@ -1,10 +1,7 @@
 body {
     background: #c7c1c1;
 }
-
-.headerTitle{
-    text-align: center;
-}
+/*Header*/
 
 #title{
     display: block;
@@ -24,14 +21,13 @@ body {
     position: fixed;
     font-family: 'Montserrat', sans-serif;
 }
-
-.active{
-    background: #5D5C61;
+.header a{
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+    font-size: 130%;
 }
 
-.login{
-    float: right;
-}
 
 .headerButtons{
     width: 100%;
@@ -43,59 +39,45 @@ body {
     flex-direction: row;
 }
 
-.headerButtons .hover-grey:hover{
+.active{
     background: #5D5C61;
 }
 
-.headerLogin{
-    position: relative;
+.hover-grey:hover{
+    background: #5D5C61;
+}
 
-    white-space: nowrap;
 
-    right: 0;
-    height: 100%;
-    width: 20%;
-    font-size: initial;
+/*DO not do this, stupid baby */
 
+#course:hover ~ #course-dropdown{
     display: flex;
-    justify-content: right;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+    text-align: center;
+    position:  relative;
+}
+#course-dropdown:hover{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position:  relative;
 }
 
-.headerLogin .hover-grey:hover{
-    background: #5D5C61;
-}
-.headerLogin a {
-    height: 100%;
-}
-
-.headerLogin a:hover{
-    background: #5D5C61;
+#course-dropdown {
+    text-align: center;
+    display: none;
+    font-size: medium;
 }
 
-.header a{
+#course-dropdown a{
     color: white;
+    background: black;
     padding: 2%;
     text-decoration: none;
     font-size: 130%;
 }
-/*DO not do this, stupid baby */
-.headerButtons > .course:hover{
 
-    display: flex;
-    flex-direction: column;
-
-    height: 10%;
-
-    background: grey;
-}
-.course-dropdown {
-    position: relative;
-    display: none;
-    font-size: medium;
-}
+/*Sidebar */
 
 #sidebar{
     position: fixed;
@@ -103,7 +85,6 @@ body {
     top: 13%;
     left: 1%;
     height: 80%;
-
     background: #557A95;
     border-radius: 4px;
     box-shadow: black 15px 20px;
