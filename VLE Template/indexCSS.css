@@ -1,6 +1,11 @@
 body {
     background: #c7c1c1;
+    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
+
 /*Header*/
 
 #title{
@@ -17,11 +22,14 @@ body {
     background-color: rgba(115, 149, 174, 0.91);
 
     height: 9%;
-    width: 100%;
+    width: 97%;
     top: 1%;
     left: 1%;
+    right: 1%;
 
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
     border-radius: 30px;
+
     position: fixed;
     font-family: 'Montserrat', sans-serif;
 }
@@ -93,7 +101,10 @@ body {
     height: 80%;
     background: #557A95;
     border-radius: 4px;
-    box-shadow: black 15px 20px;
+
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px, black 15px 20px;
+
+
 }
 
 #sidebar * {
@@ -166,7 +177,7 @@ body {
     margin: 6% 5% 4% 20% ;
     padding: 3% 5%;
     border-radius: 4px;
-    box-shadow: #557A95 10px 20px;
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px, #557A95 10px 20px;
 }
 
 #article h1{
