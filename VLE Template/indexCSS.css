@@ -70,11 +70,14 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
+
 #course-dropdown:hover{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
-    position:  relative;
+    position:  absolute;
+    left: initial;
 }
 
 #course-dropdown {
