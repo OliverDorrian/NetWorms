@@ -21,7 +21,7 @@ body {
     overflow: hidden;
     background-color: rgba(115, 149, 174, 0.91);
 
-    height: 9%;
+    height: 10%;
     width: 97%;
     top: 1%;
     left: 1%;
@@ -70,11 +70,14 @@ body {
     flex-direction: column;
     text-align: center;
 }
+
+
 #course-dropdown:hover{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
-    position:  relative;
+    position:  absolute;
+    left: initial;
 }
 
 #course-dropdown {
