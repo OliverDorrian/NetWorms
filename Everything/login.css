@@ -22,8 +22,9 @@ body{
     margin: 45% 5% 45%;
     padding: 2%;
 
-    border-radius: 30px;
-    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+    box-shadow: rgba(3, 12, 96, 0.72) 10px 10px,
+    rgb(4, 52, 154) 15px 20px;
+
     background: linear-gradient(-45deg, #a62222, #236f94, #210d75, #016db2);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
@@ -167,7 +168,7 @@ body{
 }
 
 #UserName-Container{
-    margin-top: 30%;
+    margin-top: 10%;
     text-align: center;
     display: flex;
     flex-direction: column;
