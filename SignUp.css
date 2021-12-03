@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
 body{
-    background: linear-gradient(-45deg, #8c00ff, #00aaff, #002486, #000000);
+    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 
@@ -75,7 +75,7 @@ body{
     justify-content: center;
 }
 
-#frmSurname{
+#frmPassword{
     font-size: 60%;
     padding: 1%;
     box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
@@ -181,7 +181,7 @@ body{
     box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
     border-radius: 30px;
 
-    background: linear-gradient(-45deg, #8c00ff, #00aaff, #002486, #000000);
+    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 
