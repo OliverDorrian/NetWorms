@@ -1,46 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 
+:root{
+    font-family: 'Source Code Pro', monospace;
+    --yellow: #393d42;
+    --redish: #F76C6C;
+    --lightBlue: #A8D0E6;
+    --blue: #374785;
+    --fullblue: #24305E;
+    --lessRed: #C35D69;
+    --lavinder: #744764;
+}
+
 body{
     margin:0;
-    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;]
-
+    font-family: 'Cardo', serif;
 }
 
 #left{
     position: fixed;
     width: 50%;
     height: 100%;
+
 }
 
 #titleTextBox{
     position: absolute;
     z-index: 10;
-    width: 90%;
+    width: 80%;
     height: 10%;
-    margin: 40% 5% 45%;
+    margin: 40% 10% 45%;
     padding: 2%;
 
-    box-shadow: rgba(3, 12, 96, 0.72) 10px 10px,
-    rgb(4, 52, 154) 15px 20px;
+    box-shadow: black 10px 10px;
+    background: var(--redish);
 
-    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
 
 #titleText{
-
-    font-family: 'Playfair Display', serif;
-    font-size: 200%;
-    color: white;
-    text-shadow: black;
-
-    text-align: center;
-    margin: auto;
-    width: 50%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: black;
 }
+
+
 
 #slideShow{
     width: 100%;
@@ -124,20 +133,25 @@ body{
     width: 50%;
     height: 100%;
     z-index: 2;
-    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
+
+    background: linear-gradient(-45deg, var(--blue), var(--fullblue));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
+
+
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #login-Container {
 
-    margin: 10% 25%;
-    width: 50%;
-    height: 80%;
-    box-shadow: rgba(3, 12, 96, 0.72) 10px 10px,
-    rgb(4, 52, 154) 15px 20px;
+    font-size: 2em;
+    box-shadow: black 10px 10px;
 
-
+    padding: 20%;
     background: white;
 
     display: flex;
@@ -146,23 +160,27 @@ body{
     justify-content: center;
     align-content: stretch;
     align-items: center;
+
+    color: var(--fullblue);
+    font-family: 'Oswald', sans-serif;
 }
 
 #login-Container:nth-child(1){
-    font-size: xxx-large;
+
     text-align: center;
     padding: 2%;
-    font-family: 'Playfair Display', serif;
+
     margin-bottom: 2%;
 }
 
 #titleBox{
+    font-size: 4rem;
     text-decoration: underline;
 
 }
 
 #login-Container form{
-    font-size: xx-large;
+
     margin-top: 2%;
     width: 100%;
 }
@@ -178,10 +196,9 @@ body{
 }
 
 #fname{
-    font-size: large;
+    font-size: 2rem;
     padding: 1%;
-    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
-    border-radius: 30px;
+    box-shadow: black 5px 5px;
     line-height: inherit;
 }
 
@@ -195,33 +212,67 @@ body{
 }
 
 #password{
-    font-size: large;
+    font-size: 2rem;
     padding: 1%;
-    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
-    border-radius: 30px;
+    box-shadow: black 5px 5px;
+
     line-height: inherit;
 }
 
 #Sub{
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 #SubButton{
-
+    font-size: 2rem;
+    min-width: 50%;
+    padding: 4%;
     overflow:hidden;
-    width: 80%;
 
     color: white;
 
-    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
-    border-radius: 30px;
+    box-shadow: black 10px 10px;
 
-    background: linear-gradient(-45deg, rgba(115, 149, 174, 0.91), rgba(115, 149, 174, 0.63), #4c8baf, rgba(147, 102, 102, 0.2));
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background: var(--redish);
 
 
     cursor:pointer;
-    line-height: 400%;
-    font-size: large;
+    line-height: 200%;
+}
+
+
+@media (max-device-width: 1080px) {
+    #left {
+        visibility: hidden;
+    }
+
+    #right {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        left: 0;
+    }
+
+    #fname{
+        font-size: 3rem;
+        padding: 1%;
+        box-shadow: black 5px 5px;
+        line-height: inherit;
+    }
+
+    #password{
+        font-size: 3rem;
+    }
+
+    #SubButton{
+        font-size: 3rem;
+    }
+
+    #titleBox{
+        font-size: 5rem;
+    }
+
+    #login-Container{
+        font-size: 3rem;
+    }
 }
