@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 :root{
-    font-family: 'Source Code Pro', monospace;
     --yellow: #393d42;
     --redish: #F76C6C;
     --lightBlue: #A8D0E6;
@@ -9,6 +9,17 @@
     --fullblue: #24305E;
     --lessRed: #C35D69;
     --lavinder: #744764;
+
+    --skoveloff: #006466;
+    --midGreen: #065a60;
+    --lateGreen: #0b525b;
+    --emGreen: #144552;
+    --darkGreen: #1b3a4b;
+    --prussianBlue: #212f45;
+    --Cadet: #272640;
+    --darkPurple: #312244;
+    --violet: #3e1f47;
+    --DarkViolet: #4d194d;
 }
 
 body{
@@ -28,13 +39,15 @@ body{
 }
 
 #titleTextBox{
+
+    max-width: 90%;
     position: absolute;
     z-index: 10;
 
     padding: 2%;
 
     box-shadow: black 10px 10px;
-    background: var(--redish);
+    background: var(--emGreen);
 
     display: flex;
     justify-content: center;
@@ -49,7 +62,7 @@ body{
     text-transform: uppercase;
 
     font-size: 2rem;
-    color: black;
+    color: white;
 }
 
 
@@ -137,7 +150,7 @@ body{
     height: 100%;
     z-index: 2;
 
-    background: linear-gradient(-45deg, var(--blue), var(--fullblue));
+    background: linear-gradient(-45deg, var(--skoveloff), var(--DarkViolet));
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 
@@ -151,10 +164,9 @@ body{
 
 #login-Container {
 
-    font-size: 2em;
+    visibility: visible;
     box-shadow: black 10px 10px;
-
-    padding: 20%;
+    padding: 4%;
     background: white;
 
     display: flex;
@@ -164,33 +176,32 @@ body{
     align-content: stretch;
     align-items: center;
 
-    color: var(--fullblue);
+    color: var(--skoveloff);
     font-family: 'Oswald', sans-serif;
-}
-
-#login-Container:nth-child(1){
-
     text-align: center;
-    padding: 2%;
-
-    margin-bottom: 2%;
 }
 
+
+@-webkit-keyframes fadeIn {
+    0%{
+        opacity: 0;
+       transform: translateX(150%)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+#aceLogo{
+    font-size: 2rem;
+}
 #titleBox{
-    font-size: 4rem;
     text-decoration: underline;
-
-}
-
-#login-Container form{
-
-    margin-top: 2%;
-    width: 100%;
 }
 
 #UserName-Container{
-    margin-top: 10%;
-    text-align: center;
+    padding: 1%;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -199,14 +210,15 @@ body{
 }
 
 #fname{
-    font-size: 2rem;
-    padding: 1%;
+
+    font-size: 1.5rem;
     box-shadow: black 5px 5px;
     line-height: inherit;
 }
 
 #PassWord-Container{
-    text-align: center;
+    padding: 1%;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -215,34 +227,93 @@ body{
 }
 
 #password{
-    font-size: 2rem;
-    padding: 1%;
+    font-size: 1.5rem;
     box-shadow: black 5px 5px;
-
     line-height: inherit;
 }
 
 #Sub{
-    margin-top: 10%;
+    margin-top: 12%;
 }
 
 #SubButton{
-    font-size: 2rem;
+    font-size: 1.7rem;
     min-width: 50%;
-    padding: 4%;
+    padding: 2%;
     overflow:hidden;
 
     color: white;
 
-    box-shadow: black 10px 10px;
-
-    background: var(--redish);
-
-
+    box-shadow: black 5px 5px;
+    background: var(--emGreen);
     cursor:pointer;
-    line-height: 200%;
 }
 
+#signUpBut{
+    text-decoration: underline;
+    margin-top: 7%;
+}
+
+#signUp-Container{
+
+    position: absolute;
+    visibility: hidden;
+    color: var(--skoveloff);
+    font-family: 'Oswald', sans-serif;
+
+    box-shadow: black 10px 10px;
+    padding: 2%;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    text-align: left;
+}
+
+
+#aceLogoSignUp{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+#signUpButton{
+    font-size: 1.7rem;
+    min-width: 50%;
+    margin: 5%;
+    padding: 2%;
+    overflow:hidden;
+
+    color: white;
+
+    box-shadow: black 5px 5px;
+    background: var(--emGreen);
+    cursor:pointer;
+}
+
+.labelFont{
+    font-size: 1rem;
+}
+
+.textArea{
+    font-size: 1.5rem;
+    box-shadow: black 5px 5px;
+    line-height: inherit;
+}
+
+#loginButton{
+    text-decoration: underline;
+}
+
+#course{
+    font-family: 'Noto Sans', sans-serif;
+}
+.optionText{
+    font-size: 1rem;
+}
 
 @media (max-device-width: 860px) {
     #left {

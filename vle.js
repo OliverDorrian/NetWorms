@@ -1,5 +1,5 @@
 let sideBar  = document.querySelectorAll(".dropdown");
-let sideBarBackground = document.getElementById("sidebar")
+let sideBarBackground = document.getElementById("sidebar");
 
 for (let i of  sideBar){
     i.addEventListener("click", function () {
