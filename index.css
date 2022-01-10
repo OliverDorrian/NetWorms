@@ -1,160 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('//db.onlinewebfonts.com/c/61c31922e6518aa901c94906d0453892?family=Munich');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
-:root{
-    --yellow: #393d42;
-    --redish: #F76C6C;
-    --lightBlue: #A8D0E6;
-    --blue: #374785;
-    --fullblue: #24305E;
-    --lessRed: #C35D69;
-    --lavinder: #744764;
-
-    --skoveloff: #006466;
-    --midGreen: #065a60;
-    --lateGreen: #0b525b;
-    --emGreen: #144552;
-    --darkGreen: #1b3a4b;
-    --prussianBlue: #212f45;
-    --Cadet: #272640;
-    --darkPurple: #312244;
-    --violet: #3e1f47;
-    --DarkViolet: #4d194d;
+:root {
+    --black: #212221;
+    --lightBlue: #26ACE2;
+    --white: #FFFFFF;
 }
 
-body{
-    margin:0;
-    font-family: 'Cardo', serif;
+body {
+    background-color: #212221;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23ffffff' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2321ace2' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23ddeef9' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%234187be' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23baddf4' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%234a6596' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2395cdee' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2345456d' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2369bce8' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23372945' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%2321ace2' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23221122' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Josefin Slab', serif;
 }
 
-#left{
+#left {
     position: fixed;
     width: 50%;
     height: 100%;
-
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: nowrap;
 }
 
-#titleTextBox{
-
-    max-width: 90%;
-    position: absolute;
-    z-index: 10;
-
+#titleText {
+    color: var(--white);
     padding: 2%;
-
-    box-shadow: black 10px 10px;
-    background: var(--emGreen);
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-}
-
-#titleText{
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-
-    font-size: 2rem;
-    color: white;
+    font-size: 10rem;
 }
 
-
-
-#slideShow{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#slideShow div{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-size: cover;
-    background-position: center center;
-}
-
-#picture1{
-    animation: animate 20s linear;
-    animation-iteration-count: 1;
-}
-#picture2{
-    animation: animate 20s infinite 20s;
-    animation-iteration-count: 1;
-}
-#picture3{
-    animation: animate 20s linear 40s;
-    animation-iteration-count: 1;
-}
-
-#picture4{
-    animation: animate 20s linear 60s;
-    animation-iteration-count: 1;
-}
-
-#picture5{
-    animation: animate 20s linear 80s;
-    animation-iteration-count: 1;
-}
-
-#picture6{
-    animation: animate 20s infinite 100s;
-}
-
-/* Need to make these animations smother tbh, but alright for now*/
-@keyframes animate {
-    0% {
-        opacity: 0.7;
-        transform: scale(1.4);
-    }
-    20%{
-        opacity: 1;
-    }
-
-    60%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0.7;
-    }
-}
-
-/*Change this  */
-
-@keyframes gradient {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-
-#right{
+#right {
+    font-family: 'PT Mono', monospace;
     left: 50%;
     position: fixed;
     width: 50%;
     height: 100%;
     z-index: 2;
-
-    background: linear-gradient(-45deg, var(--skoveloff), var(--DarkViolet));
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-
-
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -163,43 +49,44 @@ body{
 }
 
 #login-Container {
-
     visibility: visible;
-    box-shadow: black 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px, rgb(51, 51, 51) 0 0 0 3px;
+    border-radius: 5px;
     padding: 4%;
     background: white;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: stretch;
     align-items: center;
-
-    color: var(--skoveloff);
-    font-family: 'Oswald', sans-serif;
+    color: var(--black);
     text-align: center;
 }
 
 
 @-webkit-keyframes fadeIn {
-    0%{
+    0% {
         opacity: 0;
-       transform: translateX(150%)
+        transform: translateX(150%)
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translateX(0)
     }
 }
-#aceLogo{
+
+#aceLogo {
+    font-family: 'Josefin Slab', serif;
     font-size: 2rem;
 }
-#titleBox{
+
+#titleBox {
     text-decoration: underline;
 }
 
-#UserName-Container{
+#UserName-Container {
+    margin-right: auto;
     padding: 1%;
     text-align: left;
     display: flex;
@@ -209,14 +96,14 @@ body{
     align-content: center;
 }
 
-#fname{
-
+#fname {
+    font-family: 'PT Mono', monospace;
     font-size: 1.5rem;
-    box-shadow: black 5px 5px;
+    border-radius: 5px;
     line-height: inherit;
 }
 
-#PassWord-Container{
+#PassWord-Container {
     padding: 1%;
     text-align: left;
     display: flex;
@@ -226,45 +113,42 @@ body{
     align-content: center;
 }
 
-#password{
+#password {
+    font-family: 'PT Mono', monospace;
     font-size: 1.5rem;
-    box-shadow: black 5px 5px;
+    border-radius: 5px;
     line-height: inherit;
 }
 
-#Sub{
+#Sub {
+    font-family: 'PT Mono', monospace;
+
     margin-top: 12%;
 }
 
-#SubButton{
+#SubButton {
     font-size: 1.7rem;
     min-width: 50%;
     padding: 2%;
-    overflow:hidden;
-
+    overflow: hidden;
     color: white;
-
-    box-shadow: black 5px 5px;
-    background: var(--emGreen);
-    cursor:pointer;
+    background: var(--black);
+    cursor: pointer;
 }
 
-#signUpBut{
+#signUpBut {
     text-decoration: underline;
     margin-top: 7%;
 }
 
-#signUp-Container{
-
+#signUp-Container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 5px;
     position: absolute;
     visibility: hidden;
-    color: var(--skoveloff);
-    font-family: 'Oswald', sans-serif;
-
-    box-shadow: black 10px 10px;
+    color: var(--black);
     padding: 4%;
     background: white;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -275,43 +159,42 @@ body{
 }
 
 
-#aceLogoSignUp{
+#aceLogoSignUp {
+    font-family: 'Josefin Slab', serif;
     font-size: 2rem;
     text-decoration: underline;
 }
 
-#signUpButton{
+#signUpButton {
+
     font-size: 1.7rem;
     min-width: 50%;
     margin: 5%;
     padding: 2%;
-    overflow:hidden;
-
+    overflow: hidden;
     color: white;
-
-    box-shadow: black 5px 5px;
-    background: var(--emGreen);
-    cursor:pointer;
+    background: var(--black);
+    cursor: pointer;
 }
 
-.labelFont{
+.labelFont {
     font-size: 1rem;
 }
 
-.textArea{
+.textArea {
     font-size: 1.5rem;
-    box-shadow: black 5px 5px;
+    margin-bottom: 0.75rem;
+    border-radius: 5px;
     line-height: inherit;
+    font-family: 'PT Mono', monospace;
+
 }
 
-#loginButton{
+#loginButton {
     text-decoration: underline;
 }
 
-#course{
-    font-family: 'Noto Sans', sans-serif;
-}
-.optionText{
+.optionText {
     font-size: 1rem;
 }
 
@@ -327,26 +210,26 @@ body{
         left: 0;
     }
 
-    #fname{
+    #fname {
         font-size: 3rem;
         padding: 1%;
-        box-shadow: black 5px 5px;
+
         line-height: inherit;
     }
 
-    #password{
+    #password {
         font-size: 3rem;
     }
 
-    #SubButton{
+    #SubButton {
         font-size: 3rem;
     }
 
-    #titleBox{
+    #titleBox {
         font-size: 4rem;
     }
 
-    #login-Container{
+    #login-Container {
         font-size: 3rem;
     }
 }
