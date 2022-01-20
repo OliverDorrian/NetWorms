@@ -9,7 +9,7 @@
 
 body {
     background-color: #084356;
-    background-image: url('/Assets/blobscenehaikei.svg');
+    background-image: url("Assets/blobscenehaikei.svg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
