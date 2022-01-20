@@ -5,6 +5,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.svg">
 </head>
 <body>
     <div id="left">
@@ -19,17 +20,17 @@
             </div>
             <form id="formBox" action="">
                 <div id="UserName-Container">
-                    <label for="fname" id="nameish">Username:</label>
-                    <input type="text" id="fname" value="">
+                    <label clas="labelFont">Username:</label>
+                    <input type="text" class="textArea" value="">
                 </div>
                 <div id="PassWord-Container">
-                    <label for="password" id="passwordish">Password:</label>
-                    <input type="password" id="password" value="">
+                    <label class="lableFont">Password:</label>
+                    <input type="password" class="textArea" value="">
+
                 </div>
                 <div id="Sub">
                     <input type="button" id="SubButton" value="Submit" onclick="location.href='vle.html';">
                     <br>
-
                     <a id="signUpBut" style="display: inline-block">
                         Sign-Up...
                     </a>
@@ -40,26 +41,22 @@
             <div id="aceLogoSignUp">
                 <h1>Sign Up</h1>
             </div>
-            <form id="formBox2" action="">
-                <div id="userNameBox">
-                    <label class="labelFont" for="userNameSignUp">Username:<br></label>
-                    <input class="textArea" type="text" id="userNameSignUp" value="">
+            <form action="">
+                <div>
+                    <label class="labelFont">Username:<br></label>
+                    <input class="textArea" type="text" value="">
                 </div>
-                <div id="passWordBox">
-                    <label class="labelFont" for="passWordSignUp">Password:<br></label>
-                    <input class="textArea" type="password" id="passWordSignUp" value="">
+                <div>
+                    <label class="labelFont">Password:<br></label>
+                    <input class="textArea" type="password" value="">
                 </div>
-                <div id="emailBox">
-                    <label class="labelFont" for="email">E-Mail:<br></label>
-                    <input class="textArea" type="text" id="email" value="">
+                <div>
+                    <label class="labelFont">Re-Enter Password:<br></label>
+                    <input class="textArea" type="password" value="">
                 </div>
-                <div id="course-dropdown">
-                    <label class="labelFont" for="course">Course:<br></label>
-                    <select class="textArea" id="course">
-                        <option class="optionText" value="Web Development">Web development</option>
-                        <option class="optionText" value="Psychology">Psychology</option>
-                        <option class="optionText" value="Math">Math</option>
-                    </select>
+                <div>
+                    <label class="labelFont" >E-Mail:<br></label>
+                    <input class="textArea" type="text" value="">
                 </div>
             </form>
             <input type="button" id="signUpButton" value="Submit" onclick="location.href='vle.html';">

@@ -54,7 +54,7 @@ body {
     visibility: visible;
     
     box-shadow: rgba(0, 0, 0) 10px 10px; 
-    padding: 4%;
+    padding: 2%;
     background: white;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ body {
 }
 
 #aceLogo {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #UserName-Container {
@@ -128,7 +128,7 @@ body {
 }
 
 #SubButton {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     min-width: 50%;
     padding: 2%;
     overflow: hidden;
@@ -143,12 +143,12 @@ body {
 }
 
 #signUp-Container {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0) 10px 10px;
+
     position: absolute;
     visibility: hidden;
     color: var(--black);
-    padding: 4%;
+    padding: 2%;
     background: white;
     display: flex;
     flex-direction: column;
@@ -165,8 +165,7 @@ body {
 }
 
 #signUpButton {
-
-    font-size: 2.5em;
+    font-size: 1.5rem;
     min-width: 50%;
     margin: 5%;
     padding: 2%;
@@ -177,7 +176,7 @@ body {
 }
 
 .labelFont {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .textArea {
