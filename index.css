@@ -11,7 +11,7 @@
 
 body {
     background-color: #084356;
-    background-image: url('assets/blob-scene-haikei.svg');
+    background-image: url('/Assets/blobscenehaikei.svg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
