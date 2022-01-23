@@ -11,18 +11,22 @@
 body {
     margin: 0;
     font-family: 'Josefin Slab', serif;
+    height: 100%;
+    background-size: cover;
+    background: url('/Assets/Blob Group.svg') no-repeat;
 }
 
-#welcomeBox{
-    background-color: black;
-    position: absolute;
+
+#welcomeBox {
+    text-decoration: underline;
     margin-top: 2%;
     margin-left: 5%;
     max-width: 65%;
     padding: 0.4%;
-}
-
-#welcomeBox h1{
     font-size: 3rem;
     color: var(--white);
+}
+
+#navBox{
+
 }
