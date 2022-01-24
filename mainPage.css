@@ -16,9 +16,8 @@ body {
 }
 
 #welcomeBox {
-    text-decoration: underline;
+    margin-left:2%;
     margin-top: 2vh;
-
     max-width: 65%;
     height: 10%;
     font-size: 2rem;
@@ -26,6 +25,7 @@ body {
 }
 
 #navBox{
+
     margin-top: 5%;
     font-family: 'Open Sans', sans-serif;
     height: 100%;
@@ -37,41 +37,38 @@ body {
 }
 
 .navigationBox{
+    margin-left:2%;
+
     text-align: center;
     width: 40vh;
     height: 40vh;
-    background: white;
-    color: black;
-
+    background: #000000;
+    color: #ffffff;
     box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px inset, rgba(0, 0, 0, 0.9) 0 0 0 1px;
-
     margin-right: 5%;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
 }
 
-#img1 {
-    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
-    background-image: url('/Assets/learning.jpg');
-    background-size: 100%;
-    height: 55%;
-    width: 100%;
-}
-
-#img2 {
-    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
-    background-image: url('/Assets/QUIZ.jpg');
-    background-size: 100%;
+.imgContain {
     height: 70%;
-    width: 100%;
+    clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
+    overflow: hidden;
+
 }
 
+.imgClass{
+    width: 100%;
+    height: auto;
+}
 
 #account{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     position: absolute;
-    top: 15%;
-    left: 72%;
+    top: 20%;
+    left: 75%;
     background-color: white;
     color: black;
     box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px inset, rgba(0, 0, 0, 0.9) 0 0 0 1px;
