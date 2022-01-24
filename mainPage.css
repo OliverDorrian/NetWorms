@@ -9,50 +9,45 @@
 
 
 body {
-    margin: 0;
     font-family: 'Josefin Slab', serif;
-    height: 100%;
-    background-size: cover;
-    background: url('/Assets/Blob Group.svg') no-repeat;
+    background: url('/Assets/Blob Group.svg');
+    background-repeat: no-repeat;
+    background-size: 150% 150%;
 }
-
 
 #welcomeBox {
     text-decoration: underline;
-    margin-top: 2%;
+    margin-top: 2vh;
     margin-left: 5%;
     max-width: 65%;
-    padding: 0.4%;
-    font-size: 3rem;
-
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    height: 10%;
+    font-size: 2rem;
     color: var(--white);
 }
 
 #navBox{
-    margin: 10%;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-content: stretch;
 }
 
-
-#learning{
-    width: 10%;
-    padding: 2%;
-    background: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
+.navigationBox{
+    text-align: center;
+    width: 40vh;
+    background: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0) 10px 20px;
+    font-size: 1.5rem;
 }
 
 #img1 {
-    height: 5vh;
+    margin-top: auto;
+    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+    height: 80%;
     width: 100%;
-
 }
 
 #img1 img{
@@ -60,12 +55,15 @@ body {
     width: 100%;
 }
 
-#quizzes{
-    background: black;
-    color: white;
+#img2 {
+    margin-top: auto;
+
+    clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+    height: 80%;
+    width: 100%;
 }
 
-#account{
-    background: black;
-    color: white;
+#img2 img{
+    height: auto;
+    width: 100%;
 }
