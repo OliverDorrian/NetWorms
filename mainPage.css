@@ -7,87 +7,93 @@
     --lightBlue: #26ACE2;
     --white: #FFFFFF;
 }
-
+html{
+    background: url('/Assets/Animated Shape.svg') no-repeat;
+    background-size: auto 110% ;
+}
 
 body {
     font-family: 'Josefin Slab', serif;
-    background: url('/Assets/Blob Group.svg') no-repeat;
-    background-size: 150% 150%;
+
+    margin: 0;
 }
 
 #welcomeBox {
-    margin-left:2%;
-    margin-top: 2vh;
-    max-width: 65%;
-    height: 10%;
+    text-align: center;
+    margin-top: 2rem;
     font-size: 2rem;
     color: var(--white);
 }
 
-#navBox{
+#welcomeBox h1{
+    display: inline;
+}
 
-    margin-top: 5%;
+#navBox{
+    margin-top: 1rem;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
 }
 
 .navigationBox{
-    margin-left:2%;
-
+    border: 5px solid black;
+    margin: 1%;
+    height: 35vh;
+    position: relative;
     text-align: center;
-    width: 40vh;
-    height: 40vh;
-    background: #000000;
-    color: #ffffff;
-    box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px inset, rgba(0, 0, 0, 0.9) 0 0 0 1px;
-    margin-right: 5%;
-    font-size: 1.25rem;
-    display: flex;
-    flex-direction: column;
-}
+    width: 25%;
 
-.imgContain {
-    height: 70%;
-    clip-path: polygon(50% 14%, 100% 0, 100% 100%, 0 100%, 0 0);
-    overflow: hidden;
 
 }
 
-.imgClass{
-    width: 100%;
-    height: auto;
-}
-
-#account{
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
+.navigationBox p {
     position: absolute;
-    top: 20%;
-    left: 75%;
-    background-color: white;
-    color: black;
-    box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 1px inset, rgba(0, 0, 0, 0.9) 0 0 0 1px;
-    width: 50vh;
-    height: 70vh;
-}
-
-#accountPic{
-    height: 20%;
-    width: 100%;
-}
-
-#accountPic img{
-    clip-path: circle(50% at 50% 50%);
-    height: 100%;
-    width: auto;
-}
-
-#accountInfo{
-    margin-left: 10px;
+    left: 0;
+    bottom: 0;
     text-align: left;
+    padding: 2%;
+    font-size: 2rem;
+    background: black;
+    color: white;
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#learn{
+    background-image: url("/Assets/learning.png");
+    background-size: auto 100%;
+}
+
+
+#quiz{
+    background-image: url("/Assets/quiz.png");
+    background-size: auto 100%;
+}
+
+
+#account {
+    background-image: url("/Assets/test.png");
+    background-size: auto 100%;
+}
+
+#attendance{
+    background-image: url("/Assets/attend.png");
+    background-size: auto 100%;
+}
+
+#admin{
+    background-image: url("/Assets/admin.png");
+    background-size: auto 100%;
+}
+
+#logOut{
+    background-image: url("/Assets/logOut.png");
+    background-size: auto 100%;
 }
