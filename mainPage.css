@@ -14,7 +14,6 @@ html{
 
 body {
     font-family: 'Josefin Slab', serif;
-
     margin: 0;
 }
 
@@ -47,8 +46,6 @@ body {
     position: relative;
     text-align: center;
     width: 25%;
-
-
 }
 
 .navigationBox p {

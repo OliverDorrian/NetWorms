@@ -1,57 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200&display=swap');
 
 :root {
     --black: #212221;
-    --gray: rgb(70, 67, 67);
+    --gray: rgb(2, 2, 2);
     --lightBlue: #26ACE2;
     --white: #FFFFFF;
 }
 
 body {
     margin: 0;
-    background-color: #21ACE2;
     font-family: 'Josefin Slab', serif;
+    background-image: url("/Assets/Sprinkle.svg");
+    background-size: 500%;
 }
 
 #side-nav{
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
+    border-radius: 4px;
+
     position: fixed;
-    width: 20%;
-    height: 100%;
-    background-color: var(--gray);
+    top: 12%;
+    margin: 1%;
+    width: 18%;
+    height: 85%;
 }
 
-#title{
+#side-nav p{
+    color: white;
+    padding-left: 1rem;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#logo{
+    background: black;
+    color: white;
+    border-radius: 4px;
+
+    position: fixed;
+    margin: 1%;
+    width: 18%;
+    display: inline-block;
+
     text-align: center;
-    padding: 1%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    height: 10%;
 }
-#title img{
-    text-align:center;
-    display: inline;
-    max-height: 6vh;
 
-}
-#titleText{
-    display: inline;
+#logo h1{
+    font-size:  2.5vw;
 
-    color: #fff;
 }
 
 #TopBar{
-    position: fixed;
-    left: 20%;
-    width: 80%;
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
+
+    position: absolute;
+    left: 19%;
+    width: 79%;
+    margin: 1%;
     height: 10%;
-    background-color: #212221;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#TopBar p{
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 0;
 }
 
 #main{
-    background-color: #21ACE2;
-    position: fixed;
-    top: 10%;
-    left: 20%;
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
+
+    border-radius: 4px;
+    font-family: 'Source Serif 4', sans-serif;
+    position: absolute;
+    margin-top: 6.75%;
+    margin-left: 20%;
+    width: 77%;
+    padding: 1%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    color: #000000;
+}
+
+#introText{
+    font-size: 1.5rem;
 }
